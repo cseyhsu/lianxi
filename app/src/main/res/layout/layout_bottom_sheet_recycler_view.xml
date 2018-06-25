@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!---
+   线性布局
+   id="recycler_view_bottom_sheet_parent"
+   height=400dp
+   width=parent
+   hideable = true 可以隐藏
+
+-->
+<LinearLayout
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/white"
+
+    android:id="@+id/recycler_view_bottom_sheet_parent"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="400dp"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="60dp"
+    app:layout_behavior="@string/bottom_sheet_behavior">
+
+    <ImageButton
+
+        android:id="@+id/image_button"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="10dp"
+        android:onClick="closebottomsheetrecyclerview"
+
+
+        android:src="@drawable/bottom_close"
+
+
+        />
+
+    <android.support.v7.widget.RecyclerView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/bottom_sheet"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:background="@android:color/white"
+        android:orientation="vertical"
+
+        />
+
+</LinearLayout>
+
+
+    <!--作者：泽毛--><!--链接：https://www.jianshu.com/p/2a5be29123e5--><!--來源：简书--><!--简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。-->

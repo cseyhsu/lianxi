@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+
+<!--
+设置layout  app:layout_behavior="@string/bottom_sheet_behavior"
+-->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/bottom_sheet"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:layout_behavior="@string/bottom_sheet_behavior"
+    app:behavior_hideable="true"
+    app:behavior_peekHeight="30dp"
+
+    android:layout_alignParentBottom="true"
+    >
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="66dp"
+        android:text="yyyy"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:background="@android:color/holo_green_dark" />
+    <TextView
+        android:background="@android:color/holo_orange_dark"
+        android:layout_width="match_parent"
+        android:layout_height="66dp" />
+    <TextView
+        android:background="@android:color/holo_green_dark"
+        android:layout_width="match_parent"
+        android:layout_height="66dp" />
+    <TextView
+        android:background="@android:color/holo_orange_dark"
+        android:layout_width="match_parent"
+        android:layout_height="66dp" />
+    <TextView
+        android:background="@android:color/holo_green_dark"
+        android:layout_width="match_parent"
+        android:layout_height="66dp" />
+    <TextView
+        android:background="@android:color/holo_orange_dark"
+        android:layout_width="match_parent"
+        android:layout_height="66dp" />
+
+    <!--作者：泽毛-->
+    <!--链接：https://www.jianshu.com/p/2a5be29123e5-->
+    <!--來源：简书-->
+    <!--简书著作权归作者所有，任何形式的转载都请联系作者获得授权并注明出处。-->
+</LinearLayout>
