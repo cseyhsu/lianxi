@@ -70,4 +70,88 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+
+    // 旋转菜单
+    public void statelliteMenu(View view) {
+
+        Intent intent = new Intent(MainActivity.this, StateLLiteMenuActivity.class);
+
+        startActivity(intent);
+
+    }
+
+    public void loginActivity(View view) {
+
+        Intent intent = new Intent(MainActivity.this, LoginActivity.class);
+
+        startActivity(intent);
+    }
+
+
+
+    public void tabActivity(View view) {
+
+        Intent intent = new Intent(MainActivity.this, TabActivity.class);
+
+        startActivity(intent);
+
+
+    }
+
+
+    // 跳转到全屏activity
+    //
+    public void fullScreenActivity(View view) {
+
+
+        Intent intent = new Intent(this, FullscreenActivity.class);
+
+        startActivity(intent);
+    }
+
+    public void camera(View view) {
+
+
+        Intent intent = new Intent(MainActivity.this, ResultIntentActivity.class);
+
+
+
+        startActivity(intent);
+    }
+
+    public void onLogin(View view) {
+
+        Intent intent = new Intent(MainActivity.this, OnLoginActivity.class);
+
+        startActivity(intent);
+    }
+
+    //聊天窗口
+    public void chatSample(View view) {
+
+
+        Intent intent = new Intent(MainActivity.this, ChatDemoActivity.class);
+
+        startActivity(intent);
+    }
+
+    public void gallery(View view) {
+        Intent intent = new Intent(MainActivity.this, GalleryActivity.class);
+
+        startActivity(intent);
+    }
+
+    //跳转到爆炸效果的菜单
+    public void boomMenuButton(View view) {
+
+        startActivity(new Intent(MainActivity.this, BoomMenuButtonActivity.class));
+    }
+
+    public void CollapsingToolbarLayout(View view) {
+
+        Intent intent = new Intent(this, CollapsingToolbarLayoutActivity.class);
+
+        startActivity(intent);
+    }
 }

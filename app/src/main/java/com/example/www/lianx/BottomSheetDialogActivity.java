@@ -89,7 +89,7 @@ public class BottomSheetDialogActivity extends AppCompatActivity {
         recyclerView.setLayoutManager(layoutManager);
 
         // 初始化 list
-      //  init_fruit();
+        //  init_fruit();
 
         //  为recyclerView 设置适配器
         recyclerView.setAdapter(new RecyclerViewAdapter(fruitList));

@@ -5,6 +5,16 @@
     <!-- 联网权限 -->
     <uses-permission android:name="android.permission.INTERNET" />
 
+    <!-- 外部存储权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+
+    <!-- 打开相机 -->
+    <!-- <uses-permission android:name="android.permission.CAMERA"/> -->
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -33,16 +43,62 @@
         <activity android:name=".LinearBottomSheetActivity" />
         <activity android:name=".BottomSheetDialogActivity" />
         <activity android:name=".ViewPageBottomNavigationBarActivity" />
-
-
         <activity
             android:name=".BottomNavigationViewViewPageActivity"
             android:label="@string/title_activity_bottom_navigation_view_view_page"
-
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
-            >
-
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".StateLLiteMenuActivity" />
+        <activity
+            android:name=".FullscreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_fullscreen"
+            android:theme="@style/FullscreenTheme" />
+        <activity
+            android:name=".ItemListActivity"
+            android:label="@string/title_item_list"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".ItemDetailActivity"
+            android:label="@string/title_item_detail"
+            android:parentActivityName=".ItemListActivity"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="com.example.www.lianx.ItemListActivity" />
         </activity>
+        <activity
+            android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity
+            android:name=".TabActivity"
+            android:label="@string/title_activity_tab"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ResultIntentActivity" />
+
+        <provider
+            android:name="android.support.v4.content.FileProvider"
+            android:authorities="com.example.lianxi"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".OnLoginActivity"
+            android:label="@string/title_activity_on_login" />
+        <activity android:name=".ChatSimpleActivity" />
+        <activity android:name=".ChatDemoActivity" />
+
+        <!-- 聊天窗口 -->
+        <activity android:name=".MessengerActivity" />
+        <activity android:name=".GalleryActivity" />
+        <activity android:name=".ImageActivity" />
+        <activity android:name=".BoomMenuButtonActivity" />
+        <activity android:name=".CollapsingToolbarLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar"
+            ></activity>
     </application>
 
 </manifest>
