@@ -34,4 +34,5 @@ dependencies {
     implementation 'com.google.code.gson:gson:2.3.1'
     // 爆炸效果的浮动按钮
     implementation 'com.nightonke:boommenu:2.1.1'
+    implementation 'com.github.stfalcon:chatkit:0.2.2'
 }

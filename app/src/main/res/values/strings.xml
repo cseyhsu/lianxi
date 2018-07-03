@@ -98,5 +98,6 @@
     <string name="share">share</string>
     <string name="coporation">coporation</string>
     <string name="diary">diary</string>
+    <string name="title_activity_view">ViewActivity</string>
 
 </resources>

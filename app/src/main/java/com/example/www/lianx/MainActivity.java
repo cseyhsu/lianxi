@@ -1,11 +1,16 @@
 package com.example.www.lianx;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
+import android.widget.Toast;
 
 import java.net.Inet4Address;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +18,41 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
+        // md5加密
+        try {
+            MessageDigest md5 = MessageDigest.getInstance("MD5");
+
+            String string = "helloworld"+System.currentTimeMillis();
+            byte[] bytes = md5.digest(string.getBytes());
+
+            System.out.println("原生"+new String(bytes));
+
+            String result = "";
+            for (byte b : bytes) {
+                String temp = Integer.toHexString(b & 0xff);
+                if (temp.length() == 1) {
+                    temp = "0" + temp;
+                }
+                result += temp;
+            }
+
+            TextView textView = findViewById(R.id.text_md5);
+            textView.setText("md5加密 "+result+" , "+" 原生 "+new String(bytes));
+            SharedPreferences sharedPreferences = getSharedPreferences("userinfo", MODE_PRIVATE);
+            SharedPreferences.Editor edit = sharedPreferences.edit();
+
+            edit.putString("pwd",result);
+
+            edit.apply();
+
+            Toast.makeText(getApplicationContext(),result,Toast.LENGTH_LONG).show();
+
+        } catch (NoSuchAlgorithmException e) {
+            e.printStackTrace();
+        }
+
     }
 
     public void navigation(View view) {
@@ -151,6 +191,21 @@ public class MainActivity extends AppCompatActivity {
     public void CollapsingToolbarLayout(View view) {
 
         Intent intent = new Intent(this, CollapsingToolbarLayoutActivity.class);
+
+        startActivity(intent);
+    }
+
+    public void chatkitDemo(View view) {
+
+        Intent intent = new Intent(this, ChatKitDemoActivity.class);
+
+
+        startActivity(intent);
+    }
+
+    public void viewpage_welcome(View view) {
+
+        Intent intent = new Intent(this, ViewActivity.class);
 
         startActivity(intent);
     }

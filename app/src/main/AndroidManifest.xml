@@ -96,9 +96,15 @@
         <activity android:name=".GalleryActivity" />
         <activity android:name=".ImageActivity" />
         <activity android:name=".BoomMenuButtonActivity" />
-        <activity android:name=".CollapsingToolbarLayoutActivity"
-            android:theme="@style/AppTheme.NoActionBar"
-            ></activity>
+        <activity
+            android:name=".CollapsingToolbarLayoutActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ChatKitActivity" />
+        <activity android:name=".ChatKitDemoActivity" />
+        <activity
+            android:name=".ViewActivity"
+            android:label="@string/title_activity_view"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>
