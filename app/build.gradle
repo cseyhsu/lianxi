@@ -35,4 +35,5 @@ dependencies {
     // 爆炸效果的浮动按钮
     implementation 'com.nightonke:boommenu:2.1.1'
     implementation 'com.github.stfalcon:chatkit:0.2.2'
+    implementation 'com.androidadvance:topsnackbar:1.1.1'
 }

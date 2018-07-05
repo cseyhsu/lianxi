@@ -213,7 +213,20 @@
             android:onClick="viewpage_welcome"
             />
 
-        <!---end 滚动条的子标签-->
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="snack bar 底部 原生"
+            android:onClick="snackbarTop"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="com.androidadvance:topsnackbar:1.1.1"
+            android:onClick="androidadvanceTopsnackbar"
+            />
+      <!---end 滚动条的子标签-->
     </LinearLayout>
 
         <!--end滚动条-->

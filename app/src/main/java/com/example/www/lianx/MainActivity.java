@@ -2,11 +2,15 @@ package com.example.www.lianx;
 
 import android.content.Intent;
 import android.content.SharedPreferences;
+import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
+
+import com.androidadvance.topsnackbar.TSnackbar;
 
 import java.net.Inet4Address;
 import java.security.MessageDigest;
@@ -208,5 +212,28 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(this, ViewActivity.class);
 
         startActivity(intent);
+    }
+
+    public void snackbarTop(View view) {
+        View snack_view = getLayoutInflater().inflate(R.layout.layout_snackbar, null);
+
+        Snackbar snackbar = Snackbar.make(view, "yyyyy", Snackbar.LENGTH_LONG);
+
+
+        snackbar.setAction("nulll", new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),"yyyy",Toast.LENGTH_LONG).show();
+            }
+        });
+
+
+        snackbar.show();
+    }
+
+
+    public void androidadvanceTopsnackbar(View view) {
+        TSnackbar.make(findViewById(android.R.id.content),"Hello from TSnackBar.",TSnackbar.LENGTH_LONG).show();
+
     }
 }
