@@ -226,6 +226,13 @@
             android:text="com.androidadvance:topsnackbar:1.1.1"
             android:onClick="androidadvanceTopsnackbar"
             />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="滑动返回"
+            android:onClick="swipeBack"/>
+
       <!---end 滚动条的子标签-->
     </LinearLayout>
 

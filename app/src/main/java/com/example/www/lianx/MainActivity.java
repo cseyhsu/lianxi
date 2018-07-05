@@ -5,14 +5,12 @@ import android.content.SharedPreferences;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.view.LayoutInflater;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
 import com.androidadvance.topsnackbar.TSnackbar;
 
-import java.net.Inet4Address;
 import java.security.MessageDigest;
 import java.security.NoSuchAlgorithmException;
 
@@ -235,5 +233,13 @@ public class MainActivity extends AppCompatActivity {
     public void androidadvanceTopsnackbar(View view) {
         TSnackbar.make(findViewById(android.R.id.content),"Hello from TSnackBar.",TSnackbar.LENGTH_LONG).show();
 
+    }
+
+    // 滑动返回
+    public void swipeBack(View view) {
+
+        Intent intent = new Intent(this, MeSwipeBackActivity.class);
+
+        startActivity(intent);
     }
 }

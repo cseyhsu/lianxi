@@ -29,4 +29,27 @@
 
     <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 
+
+
+
+    <!--滑动返回-->
+    <style name="AppTheme.SwipeBack" parent="Theme.AppCompat.Light">
+        <item name="windowActionBar">false</item>
+        <item name="windowActionBarOverlay">false</item>
+
+        <item name="windowActionModeOverlay">false</item>
+
+        <item name="windowNoTitle">false</item>
+
+
+    </style>
+
+
+    <!--<style name="Theme.Swipe.Back" parent="Theme.AppCompat.Light.DarkActionBar">-->
+        <!--<item name="android:windowIsTranslucent">true</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+        <!--<item name="windowActionBar">false</item>-->
+        <!--<item name="android:windowNoTitle">true</item>-->
+    <!--</style>-->
+
 </resources>
