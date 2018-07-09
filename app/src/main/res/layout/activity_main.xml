@@ -233,6 +233,21 @@
             android:text="滑动返回"
             android:onClick="swipeBack"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="底部导航条 com.github.armcha:SpaceNavigationView:1.6.0"
+            android:onClick="spaceNavigationViewBottom"
+            />
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="webview使用"
+            android:onClick="webViewZip"
+            tools:ignore="UnusedAttribute" />
+
       <!---end 滚动条的子标签-->
     </LinearLayout>
 

@@ -105,9 +105,9 @@
             android:name=".ViewActivity"
             android:label="@string/title_activity_view"
             android:theme="@style/AppTheme.NoActionBar" />
-        <activity
-            android:name=".MeSwipeBackActivity"
-             />
+        <activity android:name=".MeSwipeBackActivity" />
+        <activity android:name=".SpaceNavigationViewActivity" />
+        <activity android:name=".WebViewActivity"></activity>
     </application>
 
 </manifest>

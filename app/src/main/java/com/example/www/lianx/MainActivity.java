@@ -242,4 +242,20 @@ public class MainActivity extends AppCompatActivity {
 
         startActivity(intent);
     }
+
+
+    // google风格的底部导航条
+    public void spaceNavigationViewBottom(View view) {
+
+        Intent intent = new Intent(this, SpaceNavigationViewActivity.class);
+
+        startActivity(intent);
+    }
+
+    public void webViewZip(View view) {
+
+        Intent intent = new Intent(this, WebViewActivity.class);
+
+        startActivity(intent);
+    }
 }
